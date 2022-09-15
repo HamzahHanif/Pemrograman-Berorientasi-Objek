@@ -1,0 +1,51 @@
+package hanip.praktikum2;
+
+import javax.swing.JOptionPane;
+
+
+
+/**
+
+ *
+
+ * @author hamza
+
+ */
+
+public class Praktikum2 {
+
+
+
+    public static void main(String[] args) { 
+//
+//        int num1 = 55555;
+//
+//        int num2 = 55555;
+//
+//        long result = num1 * num2;
+//
+//        System.out.println("Hasil sebelum dipromote = " + result); //output yang muncul tidak sesuai dengan perhitungan aslinya karena tipe data int hanya dapat menampung -2,147,483,648 to 2,147,483,647
+//
+//        
+//
+//        //promote int num1 dan int num2 ke long agar sesuai dengan perhitungan aslinya
+//
+//        long num3 = num1;
+//
+//        long num4 = num2;
+//
+//        long result2 = num3 * num4;
+//
+//        System.out.println("Hasil sesudah dipromote = " + result2);
+        
+        String nama = JOptionPane.showInputDialog("Nama");
+        String alamat = JOptionPane.showInputDialog("Alamat");
+        String tahun = JOptionPane.showInputDialog("Tahun Angkatan");        
+        System.out.println(nama);
+        System.out.println(alamat);
+        System.out.println(tahun);
+
+    }
+
+}
+
