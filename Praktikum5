@@ -1,0 +1,62 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package hanip_praktikum5;
+
+/**
+ *
+ * @author Praktikan
+ */
+public class Hanip_Praktikum5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+//        int age = 20;
+//        
+        //panggil string
+//        String firstname = "Hamzah";
+//        String lastname = "Hanif";
+//        System.out.println(firstname);
+//        System.out.println(lastname);
+//        
+        //cara gabungin string
+//        String fullname = "Hamzah" + " Hanif";
+//        String fullname2 = firstname + " " + lastname;
+//        
+
+//        System.out.println(fullname);
+//        System.out.println(fullname2);
+//        System.out.println(fullname + " " + age);
+//        System.out.println(fullname + String.valueOf(age));
+        
+        String firstname = "Hamzah";
+        String lastname = "Hanif";
+        
+        String upper = firstname.toUpperCase(); //cara mengubah string ke kapital semua
+        String lower = lastname.toLowerCase(); //cara mengubah string ke huruf kecil semua
+        
+        System.out.println(upper);
+        System.out.println(lower);
+        
+        //cara cek panjang string
+        System.out.println(firstname.length());
+        System.out.println("hamzah".length());
+
+        //cara mengambil SUBSTRING dari string
+        System.out.println(firstname.substring(0,4));
+        
+        //methode indexof
+        System.out.println(firstname.indexOf("zah"));
+        
+        //index of dengan mengubah huruf dengan to lower/upper
+        System.out.println(firstname.toLowerCase().indexOf("ham"));
+        
+        
+    }
+    
+}
