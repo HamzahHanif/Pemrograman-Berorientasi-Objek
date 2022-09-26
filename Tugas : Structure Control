@@ -1,0 +1,124 @@
+import java.util.Scanner;
+
+public class Hanip_tugas {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Pilih Program");
+        System.out.println("1. If");
+        System.out.println("2. If else");
+        System.out.println("3. If else,else if");
+        System.out.println("4. Nested if");
+        System.out.println("5. For loop");
+        System.out.println("6. While");
+        System.out.println("7. Continue");
+        System.out.print("Masukkan Pilihan : ");
+        int a = input.nextInt();
+        
+        do{//do while
+            
+
+            switch(a){ //switch case
+                case 1: //if
+                    System.out.println("Ini adalah contoh penggunaan if. Ketik 1 untuk memulai");
+                    int x = input.nextInt();
+                    if(x==1){
+                        System.out.println("Ini adalah contoh struktur control if");
+                    }
+                    break;// break
+                
+                case 2: // if else
+                    System.out.println("Ini adalah contoh penggunaan if else program untuk mengecek bilangan ganjil atau genap.");
+                    System.out.print("Masukan bilangan yang akan di cek : ");
+                    int b = input.nextInt();
+                    
+                    if(b%2==0){
+                        System.out.println(b + " adalah bilangan genap.");
+                    }else{
+                        System.out.println(b + " adalah bilangan ganjil.");
+                    }
+                    break;
+                
+                case 3: //if else else if
+                    System.out.println("Ini adalah contoh penggunaan if else, else if program untuk mengecek bilangan genap positif atau bilangan genap negatif");
+                    System.out.print("Masukan bilangan yang akan di cek : ");
+                    int c = input.nextInt();
+                    if(c>=0 && c%2==0){
+                        System.out.println(c + " adalah bilangan genap positif");
+                    }else if(c<0 && c%2==0){
+                        System.out.println(c + " adalah bilangan genap negatif");
+                    }else {
+                        System.out.println("Input salah");
+                    }
+                    break;
+                
+                case 4: //nested if
+                    System.out.println("Ini adalah contoh penggunaan nested if program untuk mengecek bilangan genap positif atau bilangan genap negatif dan bilangan ganjil positif atau bilangan ganjil negatif");
+                    System.out.print("Masukan bilangan yang akan di cek : ");
+                    int d = input.nextInt();
+                    if(d%2==0){
+                        System.out.print(d + " adalah bilangan genap");
+                        if(d>0){
+                            System.out.println(" dan " + d + " adalah bilangan positif");
+                        }else{
+                            System.out.println(" dan " + d + " adalah bilangan negatif");
+                        }
+                    }else if(d%2!=0){
+                        System.out.print(d + " adalah bilangan ganjil");
+                        if(d>0){
+                            System.out.println(" dan " + d + " adalah bilangan positif"); 
+                        }else{
+                            System.out.println(" dan " + d + " adalah bilangan negatif");
+                        }
+                    }else{
+                            System.out.println("Input salah");
+                    }
+                    break;
+                
+                case 5: // for loop
+                    System.out.println("Ini adalah contoh penggunaan for loop program untuk mencetak angka 1 sampai n");
+                    System.out.print("Masukan n : ");
+                    int n = input.nextInt();
+                    
+                    for(int i=1 ;i<=n ;i++){
+                        System.out.println(i);
+                    }
+                    
+                    break;
+                    
+                
+                case 6: //while
+                    System.out.println("Ini adalah contoh penggunaan while program untuk mencetak angka 1 sampai e");
+                    System.out.print("Masukan e : ");
+                    int f=1;
+                    int e = input.nextInt();
+                    while(f<=e){
+                        System.out.println(f);
+                        f++;
+                    }
+                    break;
+                
+                case 7: //continue
+                    System.out.println("Ini adalah contoh penggunaan continue, mencetak angka dari 1 sampai g kecuali yang bisa dibagi 2 atau yang dibagi 8 sisa 1");
+                    System.out.print("Masukan g : ");
+                    int g = input.nextInt();
+                    for(int j=1; j<g; j++){
+                    	if(j%2==0 || j%8==1){ // print angka dari 1 sampai g kecuali yang bisa dibagi 2 atau yang dibagi 8 sisa 1
+                            continue;
+                    	}
+                    	System.out.println(j);
+                    }
+                    break;
+                
+                default:
+                    System.out.println("Input salah");
+                    break;
+            }       
+                
+            
+        }while(a>7||a<1);
+        
+    }
+    
+}
