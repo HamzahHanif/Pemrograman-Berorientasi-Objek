@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="prak14_hanip.HomeController">
+   <children>
+      <Text layoutX="231.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama : Hamzah Hanif" />
+      <Text layoutX="238.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NPM : 2117051032" />
+      <Text layoutX="245.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Umur : 20 Tahun" />
+      <Button layoutX="261.0" layoutY="217.0" mnemonicParsing="false" text="Submit" />
+   </children>
+</AnchorPane>

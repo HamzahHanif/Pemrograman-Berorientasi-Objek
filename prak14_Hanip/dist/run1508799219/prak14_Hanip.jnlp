@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="prak14_Hanip.jnlp">
+  <information>
+    <title>prak14_Hanip</title>
+    <vendor>Praktikan</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="prak14_Hanip.jar" size="2589" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="prak14_Hanip" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="prak14_hanip.Prak14_Hanip"  name="prak14_Hanip" />
+  <update check="always"/>
+</jnlp>
